@@ -1,0 +1,60 @@
+.header-div {
+  background-color: #8cff96;
+  border-radius: 30px;
+  box-shadow: 0px 1px 25px -5px #1eff43;
+  display: flex;
+  height: 30px;
+  padding: 10px;
+  align-items: center;
+  margin-top: 10px;
+  width: 100px;
+}
+
+#vg-icon {
+  height: 40px;
+}
+#hover-icon2:hover {
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+  transform: scale(1.15, 1.15) rotate(90deg);
+}
+
+.hover-icon:hover {
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+  transform: scale(1.15, 1.15);
+}
+h1 {
+  font-size: large;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 50;
+  color: #373737;
+}
+#profile-text {
+  opacity: 0;
+}
+
+#profile:hover #profile-text {
+  animation: profile-text 1s alternate forwards;
+}
+#profile:hover {
+  animation: profile-div 0.5s alternate forwards;
+}
+
+@keyframes profile-div {
+  0% {
+    width: 50px;
+  }
+  100% {
+    width: 150px;
+  }
+}
+
+@keyframes profile-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
